@@ -2,7 +2,7 @@ CONFIGURATION EMAILJS - AB Technologie Solution
 
 Dans app.js, remplace :
 
-const EMAILJS_PUBLIC_KEY = 'REMPLACE_PAR_TA_PUBLIC_KEY';
+const EMAILJS_PUBLIC_KEY = "n4Ln13zFITFZtnmdL";
 const EMAILJS_SERVICE_ID = 'service_awb5pmj';
 const EMAILJS_TEMPLATE_ID = 'template_7xcmars';
 

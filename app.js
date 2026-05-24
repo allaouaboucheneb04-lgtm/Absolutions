@@ -10,7 +10,7 @@ nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.cl
 // 3) Crée un template
 // 4) Remplace les 3 valeurs ci-dessous
 // ===============================
-const EMAILJS_PUBLIC_KEY = 'REMPLACE_PAR_TA_PUBLIC_KEY';
+const EMAILJS_PUBLIC_KEY = "n4Ln13zFITFZtnmdL";
 const EMAILJS_SERVICE_ID = 'service_awb5pmj';
 const EMAILJS_TEMPLATE_ID = 'template_7xcmars';
 const DESTINATION_EMAIL = 'abtechnologiesolution@gmail.com';
