@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AB Technologie Solution crée des sites web professionnels pour taxi, ménage, nettoyage de vitres, déménagement, garage et petites entreprises." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>AB Technologie Solution | Création de sites web professionnels</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil" aria-label="AB Technologie Solution">
+      <span class="brand-icon">AB</span>
+      <span><b>AB Technologie</b><small>Solution</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+    <nav id="nav">
+      <a href="#services">Services</a>
+      <a href="#secteurs">Secteurs</a>
+      <a href="#soumission">Soumission</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="badge">Sites web modernes pour petites entreprises</p>
+        <h1>Créez une présence en ligne qui attire plus de clients.</h1>
+        <p class="lead">Je crée des sites vitrines, formulaires de soumission, systèmes de réservation et pages professionnelles adaptées au téléphone.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#soumission">Demander une soumission</a>
+          <a class="btn ghost" href="mailto:abtechnologiesolution@gmail.com">Envoyer un email</a>
+        </div>
+        <div class="stats">
+          <div><b>100%</b><span>Mobile</span></div>
+          <div><b>SEO</b><span>Google</span></div>
+          <div><b>Rapide</b><span>Design pro</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="browser-dots"><span></span><span></span><span></span></div>
+        <div class="mock-title">Votre futur site</div>
+        <div class="mock-grid">
+          <div class="mock-block big"></div>
+          <div class="mock-block"></div>
+          <div class="mock-block"></div>
+          <div class="mock-block wide"></div>
+        </div>
+        <div class="phone-mock">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-head">
+        <p class="badge">Ce que je peux créer</p>
+        <h2>Services web</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><span>🌐</span><h3>Site vitrine</h3><p>Présentation professionnelle de votre entreprise, services, photos et contact.</p></article>
+        <article class="card"><span>📝</span><h3>Formulaire de soumission</h3><p>Recevez les demandes directement par email avec toutes les informations du client.</p></article>
+        <article class="card"><span>🚕</span><h3>Réservation taxi</h3><p>Formulaire de réservation, départ, arrivée, date, heure, téléphone et email.</p></article>
+        <article class="card"><span>📱</span><h3>Application installable</h3><p>Site PWA ajoutable sur l’écran d’accueil iPhone et Android.</p></article>
+        <article class="card"><span>⚙️</span><h3>Espace admin</h3><p>Option pour gérer demandes, clients, services, prix et contenu du site.</p></article>
+        <article class="card"><span>🔎</span><h3>Optimisation Google</h3><p>Structure SEO, titres, textes et performance pour être mieux trouvé.</p></article>
+      </div>
+    </section>
+
+    <section class="section alt" id="secteurs">
+      <div class="section-head">
+        <p class="badge">Spécialisé pour</p>
+        <h2>Entreprises locales</h2>
+      </div>
+      <div class="sector-grid">
+        <div>🚕 Taxi & transport</div>
+        <div>🧽 Ménage résidentiel</div>
+        <div>🪟 Nettoyage de vitres</div>
+        <div>🚚 Déménagement</div>
+        <div>🔧 Garage automobile</div>
+        <div>🏪 Petits commerces</div>
+      </div>
+    </section>
+
+    <section class="section" id="soumission">
+      <div class="quote-wrap">
+        <div>
+          <p class="badge">Devis gratuit</p>
+          <h2>Demandez votre soumission</h2>
+          <p class="lead small">Remplissez ce formulaire. La demande sera envoyée directement par EmailJS à votre adresse email.</p>
+          <div class="info-box">
+            <b>Email :</b><br /> abtechnologiesolution@gmail.com
+          </div>
+        </div>
+        <form id="quoteForm" class="quote-form">
+          <label>Nom complet<input name="nom" required placeholder="Votre nom" /></label>
+          <label>Téléphone<input name="telephone" required placeholder="Votre téléphone" /></label>
+          <label>Email<input name="email" type="email" required placeholder="Votre email" /></label>
+          <label>Type de projet
+            <select name="projet" required>
+              <option value="">Choisir</option>
+              <option>Site pour taxi / transport</option>
+              <option>Site pour ménage</option>
+              <option>Site pour nettoyage vitrine</option>
+              <option>Site pour déménagement</option>
+              <option>Site pour garage</option>
+              <option>Autre entreprise</option>
+            </select>
+          </label>
+          <label>Besoin principal
+            <select name="besoin" required>
+              <option value="">Choisir</option>
+              <option>Site vitrine simple</option>
+              <option>Formulaire de soumission</option>
+              <option>Réservation en ligne</option>
+              <option>Espace admin</option>
+              <option>Site complet + application installable</option>
+            </select>
+          </label>
+          <label>Budget approximatif
+            <select name="budget">
+              <option>À discuter</option>
+              <option>300$ à 500$</option>
+              <option>500$ à 800$</option>
+              <option>800$ et plus</option>
+              <option>Abonnement mensuel</option>
+            </select>
+          </label>
+          <label class="full">Message<textarea name="message" rows="5" placeholder="Expliquez votre projet, vos services, vos couleurs, vos pages souhaitées..."></textarea></label>
+          <button class="btn primary full" type="submit">Envoyer la demande</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="contact-card">
+        <p class="badge">Contact rapide</p>
+        <h2>AB Technologie Solution</h2>
+        <p>Création de sites web professionnels, modernes et adaptés aux petites entreprises.</p>
+        <a class="btn primary" href="mailto:abtechnologiesolution@gmail.com">abtechnologiesolution@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <b>AB Technologie Solution</b>
+    <span>© 2026 — Création de sites web professionnels</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

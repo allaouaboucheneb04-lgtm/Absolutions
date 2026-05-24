@@ -1,0 +1,6 @@
+Configuration EmailJS intégrée:
+Public Key: n4Ln13zFITFZtnmdL
+Service ID: service_awb5pmj
+Template ID: template_7xcmars
+
+Publiez le dossier sur GitHub Pages ou Netlify, puis testez le formulaire.
