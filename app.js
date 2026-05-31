@@ -71,6 +71,70 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
+
+  // Barre de progression
+  const progress = document.getElementById("scrollProgress");
+  window.addEventListener("scroll", () => {
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const percent = maxScroll > 0 ? (window.scrollY / maxScroll) * 100 : 0;
+    if(progress) progress.style.width = percent + "%";
+  });
+
+  // Effet 3D doux sur le logo hero
+  const heroLogo = document.querySelector(".hero-logo");
+  if(heroLogo && window.matchMedia("(min-width: 901px)").matches){
+    heroLogo.addEventListener("mousemove", (e) => {
+      const rect = heroLogo.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const rotateY = ((x / rect.width) - .5) * 10;
+      const rotateX = -((y / rect.height) - .5) * 10;
+      heroLogo.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+    heroLogo.addEventListener("mouseleave", () => {
+      heroLogo.style.transform = "";
+    });
+  }
+
+  // Particules dorées discrètes
+  const canvas = document.getElementById("goldParticles");
+  if(canvas){
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+    function resize(){
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      const count = window.innerWidth < 700 ? 28 : 55;
+      particles = Array.from({length: count}, () => ({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height,
+        r: Math.random()*1.8 + .6,
+        vx: (Math.random()-.5)*.25,
+        vy: Math.random()*.35 + .08,
+        a: Math.random()*.55 + .15
+      }));
+    }
+    function draw(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if(p.y > canvas.height + 10) p.y = -10;
+        if(p.x < -10) p.x = canvas.width + 10;
+        if(p.x > canvas.width + 10) p.x = -10;
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+        ctx.fillStyle = `rgba(246,189,33,${p.a})`;
+        ctx.fill();
+      });
+      requestAnimationFrame(draw);
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    draw();
+  }
+
+
   const form = document.getElementById("quoteForm");
   const statusText = document.getElementById("formStatus");
 

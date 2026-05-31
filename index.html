@@ -10,6 +10,8 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
+<div id="scrollProgress"></div>
+<canvas id="goldParticles"></canvas>
 
 <header class="header">
   <a class="brand" href="#accueil">
@@ -33,7 +35,7 @@
   <section id="accueil" class="hero reveal">
     <div class="hero-text reveal-item">
       <p class="badge">Agence digitale • Montréal</p>
-      <h1>Votre entreprise mérite mieux qu’une simple page Facebook.</h1>
+      <h1><span class="word-animate">Votre</span> <span class="word-animate">entreprise</span> <span class="word-animate">mérite</span> <span class="word-animate">mieux</span> <span class="word-animate">qu’une</span> <span class="word-animate">simple</span> <span class="word-animate">page</span> <span class="word-animate">Facebook.</span></h1>
       <p class="lead">AFERDIS TECH crée des sites web professionnels, des formulaires de soumission, des systèmes de réservation, l’hébergement et l’impression.</p>
       <div class="actions">
         <a class="btn primary" href="#soumission">Obtenir une soumission</a>
@@ -123,11 +125,30 @@
     </div>
   </section>
 
+  
+<section class="logos-strip reveal">
+  <div class="logos-track">
+    <span>AFERDIS TECH</span>
+    <span>Sites Web</span>
+    <span>Réservation</span>
+    <span>Soumission</span>
+    <span>Impression</span>
+    <span>Hébergement</span>
+    <span>Maintenance</span>
+    <span>AFERDIS TECH</span>
+    <span>Sites Web</span>
+    <span>Réservation</span>
+    <span>Soumission</span>
+    <span>Impression</span>
+  </div>
+</section>
+
+
   <section id="avis" class="section dark reveal">
     <p class="small-title center">Avis clients</p>
     <h2 class="center">La satisfaction au centre de chaque projet.</h2>
 
-    <div class="avis">
+    <div class="avis avis-carousel">
       <article class="reveal-item"><div>★★★★★</div><p>“Design professionnel, rapide et clair sur téléphone.”</p><strong>Client PME</strong></article>
       <article class="reveal-item"><div>★★★★★</div><p>“Le formulaire de soumission fonctionne parfaitement.”</p><strong>Entreprise locale</strong></article>
       <article class="reveal-item"><div>★★★★★</div><p>“Très bon service et accompagnement.”</p><strong>Client service</strong></article>
