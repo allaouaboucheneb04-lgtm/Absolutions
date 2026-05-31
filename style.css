@@ -36,3 +36,79 @@ footer{
   .brand-logo{height:58px}
   .logo-showcase img{max-width:320px}
 }
+
+/* Corrections mobile AFERDIS */
+.menu-toggle{
+  display:none;
+  background:transparent;
+  color:#f6bd21;
+  border:1px solid rgba(246,189,33,.55);
+  border-radius:10px;
+  font-size:28px;
+  padding:8px 13px;
+  cursor:pointer;
+}
+.brand-logo{
+  height:86px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+  border-radius:10px;
+}
+@media(max-width:900px){
+  .header{
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    padding:14px 5% !important;
+  }
+  .brand-logo{height:82px !important; max-width:190px;}
+  .menu-toggle{display:block;}
+  nav#mainNav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:#050505;
+    border-bottom:1px solid rgba(246,189,33,.35);
+    padding:14px 5%;
+    flex-direction:column;
+    gap:12px;
+  }
+  nav#mainNav.open{display:flex;}
+  nav#mainNav a{
+    padding:13px 10px;
+    border:1px solid rgba(246,189,33,.25);
+    border-radius:10px;
+    text-align:center;
+  }
+  .hero{
+    min-height:auto !important;
+    padding:38px 5% 55px !important;
+    gap:24px !important;
+  }
+  .hero h2{
+    font-size:38px !important;
+    line-height:1.08 !important;
+  }
+  .lead{
+    font-size:19px !important;
+  }
+  .tag{
+    font-size:16px !important;
+    line-height:1.35;
+  }
+  .buttons{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:12px !important;
+  }
+  .btn{
+    text-align:center;
+    width:100%;
+  }
+}
+@media(min-width:901px){
+  nav#mainNav{display:flex;}
+}
