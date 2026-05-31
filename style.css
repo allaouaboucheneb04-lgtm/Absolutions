@@ -580,3 +580,39 @@ html body #accueil .actions{
     font-size:30px;
   }
 }
+
+/* CLEAN HERO FIX */
+.hero,.hero-content,#accueil{
+min-height:auto !important;
+height:auto !important;
+}
+
+.hero-logo,
+.hero-image,
+.hero-right{
+display:none !important;
+}
+
+.hero-text{
+width:100% !important;
+max-width:100% !important;
+}
+
+.hero-services{
+margin-bottom:12px !important;
+}
+
+.actions{
+margin-top:8px !important;
+}
+
+@media(max-width:900px){
+.hero,
+#accueil{
+padding:20px 5% !important;
+min-height:auto !important;
+}
+.hero *{
+margin-bottom:10px !important;
+}
+}
