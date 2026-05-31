@@ -1,6 +1,6 @@
 AFERDIS TECH - Site Web
 
-Téléphone: non affiché sur le site
+Aucun numéro affiché
 Email: aferdis.tech@gmail.com
 Site: aferdis.com
 Réseaux: @aferdis.tech
