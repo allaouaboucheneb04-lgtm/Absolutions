@@ -17,3 +17,39 @@
   border:2px solid rgba(255,255,255,.25);
 }
 .whatsapp-float:hover{transform:scale(1.06)}
+
+/* Logo AFERDIS ajouté */
+.brand-logo{
+  height:72px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+  border-radius:10px;
+}
+.logo-showcase{
+  text-align:center;
+}
+.logo-showcase img{
+  width:100%;
+  max-width:430px;
+  border-radius:18px;
+  margin-bottom:22px;
+  box-shadow:0 20px 55px rgba(0,0,0,.45);
+  border:1px solid rgba(246,189,33,.28);
+}
+.footer-logo{
+  width:220px;
+  max-width:80%;
+  border-radius:12px;
+  margin-bottom:14px;
+}
+footer{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+@media(max-width:900px){
+  .brand-logo{height:58px}
+  .logo-showcase img{max-width:320px}
+}

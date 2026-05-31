@@ -1,6 +1,6 @@
 AFERDIS TECH - Site Web
 
-Téléphone: 514-464-0121
+Téléphone: non affiché sur le site
 Email: aferdis.tech@gmail.com
 Site: aferdis.com
 Réseaux: @aferdis.tech
