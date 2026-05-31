@@ -561,3 +561,22 @@ html body #accueil .actions{
   0%,100%{transform:translateY(0)}
   50%{transform:translateY(-5px)}
 }
+
+.hero-hook{
+  font-size:clamp(22px,3vw,42px);
+  font-weight:800;
+  color:#ffffff;
+  margin:8px 0 12px;
+  line-height:1.2;
+}
+.hero-slogan{
+  color:#f6bd21;
+  font-weight:900;
+  letter-spacing:1px;
+  margin:0 0 14px;
+}
+@media(max-width:900px){
+  .hero-hook{
+    font-size:30px;
+  }
+}
