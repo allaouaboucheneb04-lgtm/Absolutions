@@ -1,19 +1,15 @@
-AFERDIS TECH - Version style agence digitale inspirée de Sourati Digital
+AFERDIS TECH - Version stable mobile corrigée
 
-Ajouts:
-- Layout agence professionnelle
-- Header premium
-- Section L'agence
-- Statistiques
-- Services
-- Réalisations
-- Processus
-- Tarifs
+Corrigé:
+- Plus d'écran noir sur iPhone
+- Pas d'animations qui cachent le contenu
+- Menu hamburger fonctionnel
+- Logo intégré
 - Avis clients
-- Soumission EmailJS
-- Footer complet
-- Logo ajouté
-- Aucun numéro de téléphone affiché
+- Réalisations
+- Tarifs
+- Formulaire EmailJS
+- Aucun numéro affiché
 - Aucun WhatsApp
 
 EmailJS:
