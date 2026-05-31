@@ -321,3 +321,21 @@ section.visible .reveal-item:nth-child(6){transition-delay:.40s}
   .logos-track{animation-duration:22s}
   .cards article:hover,.portfolio article:hover{transform:translateY(-7px)}
 }
+
+.premium-title{
+font-size:64px;
+font-weight:900;
+line-height:1;
+margin:20px 0;
+background:linear-gradient(90deg,#fff,#f6bd21);
+-webkit-background-clip:text;
+color:transparent;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+.hero-logo img{
+box-shadow:0 0 40px rgba(246,189,33,.25);
+}
+@media(max-width:900px){
+.premium-title{font-size:42px;}
+}
