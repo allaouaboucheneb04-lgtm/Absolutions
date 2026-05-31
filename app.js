@@ -21,6 +21,56 @@ document.addEventListener("DOMContentLoaded", function () {
     emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
   }
 
+
+  // Animations stables au défilement
+  const revealEls = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach((el) => observer.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("visible"));
+  }
+
+  // Header avec ombre au scroll
+  const header = document.querySelector(".header");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 30) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
+  });
+
+  // Chiffres animés
+  const counters = document.querySelectorAll(".counter");
+  if ("IntersectionObserver" in window) {
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target || "0", 10);
+        const suffix = el.dataset.suffix || "";
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 40));
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = current + suffix;
+        }, 24);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    counters.forEach((el) => counterObserver.observe(el));
+  }
+
+
   const form = document.getElementById("quoteForm");
   const statusText = document.getElementById("formStatus");
 
