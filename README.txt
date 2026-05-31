@@ -1,17 +1,22 @@
-AFERDIS TECH - Site Web
+AFERDIS TECH - Version style agence digitale inspirée de Sourati Digital
 
-Aucun numéro affiché
-Email: aferdis.tech@gmail.com
-Site: aferdis.com
-Réseaux: @aferdis.tech
+Ajouts:
+- Layout agence professionnelle
+- Header premium
+- Section L'agence
+- Statistiques
+- Services
+- Réalisations
+- Processus
+- Tarifs
+- Avis clients
+- Soumission EmailJS
+- Footer complet
+- Logo ajouté
+- Aucun numéro de téléphone affiché
+- Aucun WhatsApp
 
-EmailJS configuré:
-Public Key: n4Ln13zFITFZtnmdL
-Service ID: service_awb5pmj
-Template ID: template_7xcmars
-
-Pour publier:
-1. Dézippez le dossier
-2. Envoyez les fichiers dans GitHub
-3. Activez GitHub Pages
-4. Ajoutez aferdis.com dans Settings > Pages
+EmailJS:
+Service ID: service_6p44ax8
+Template ID: template_8a2jzbe
+Public Key: AuecG8oUqCqCiggFv

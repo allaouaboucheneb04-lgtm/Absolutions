@@ -1,124 +1,190 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AFERDIS TECH | Sites web & solutions numériques</title>
-  <meta name="description" content="AFERDIS TECH crée des sites web modernes, soumissions en ligne, réservations en ligne et services d'impression.">
-  <link rel="icon" href="images/logo-aferdis.jpg">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFERDIS TECH | Agence digitale</title>
+  <meta name="description" content="AFERDIS TECH crée des sites web professionnels, des systèmes de réservation, des formulaires de soumission, l'hébergement web et l'impression." />
+  <link rel="icon" href="images/logo-aferdis.jpg" />
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-<header class="header">
-  <div class="brand">
-    <img src="images/logo-aferdis.jpg" alt="AFERDIS TECH" class="brand-logo">
-  </div>
-  <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
-  <nav id="mainNav">
-    <a href="#services">Services</a>
-    <a href="#impression">Impression</a>
-    <a href="#soumission">Soumission</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
 
-<section class="hero">
-  <div>
-    <p class="tag">Sites web • Soumissions • Réservations • Impression</p>
-    <h2>Votre entreprise mérite un site professionnel.</h2>
-    <p class="lead">AFERDIS TECH crée des sites web modernes, rapides et adaptés aux téléphones pour les taxis, garages, nettoyage, déménagement, restaurants et petites entreprises.</p>
-    <div class="buttons">
-      <a class="btn primary" href="#soumission">📝 Demander une soumission</a>
-      <a class="btn secondary" href="mailto:aferdis.tech@gmail.com?subject=Demande%20de%20renseignements%20AFERDIS%20TECH">📧 Nous contacter</a>
+  <div class="topbar">
+    <span>★ Service professionnel</span>
+    <span>Résultats exceptionnels</span>
+    <span>Soumission gratuite</span>
+  </div>
+
+  <header class="header">
+    <a href="#" class="brand"><img src="images/logo-aferdis.jpg" alt="AFERDIS TECH"></a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav id="mainNav">
+      <a href="#accueil">Accueil</a>
+      <a href="#agence">L'agence</a>
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#soumission" class="nav-cta">Demander un devis</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-left">
+          <p class="eyebrow">Agence digitale à Montréal</p>
+          <h1>Transformez votre vision digitale en réalité.</h1>
+          <p class="lead">Sites web modernes, soumissions en ligne, réservations, hébergement et impression pour les entreprises locales.</p>
+          <div class="hero-actions">
+            <a href="#soumission" class="btn primary">Obtenir une soumission</a>
+            <a href="#realisations" class="btn secondary">Voir nos réalisations</a>
+          </div>
+        </div>
+        <div class="hero-logo-card">
+          <img src="images/logo-aferdis.jpg" alt="Logo AFERDIS TECH">
+        </div>
+      </div>
+    </section>
+
+    <section id="agence" class="section split">
+      <div>
+        <p class="small-title">À propos d'AFERDIS TECH</p>
+        <h2>Une nouvelle approche pour promouvoir votre entreprise.</h2>
+      </div>
+      <div>
+        <p>AFERDIS TECH accompagne les petites entreprises, taxis, garages, services de nettoyage et commerces dans leur présence numérique. Notre objectif est simple : créer un site professionnel qui inspire confiance et transforme les visiteurs en clients.</p>
+        <div class="checks">
+          <span>✓ Design moderne</span>
+          <span>✓ Approche personnalisée</span>
+          <span>✓ Compatible mobile</span>
+          <span>✓ Formulaire connecté par email</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>93%</strong><span>Qualité visuelle</span></div>
+      <div><strong>94%</strong><span>Expérience mobile</span></div>
+      <div><strong>100%</strong><span>Soumission par email</span></div>
+      <div><strong>24h</strong><span>Réponse rapide</span></div>
+    </section>
+
+    <section id="services" class="section">
+      <p class="small-title center">Nos services</p>
+      <h2 class="center">Des solutions fiables pour développer votre présence en ligne.</h2>
+      <div class="services-grid">
+        <article><div class="icon">🌐</div><h3>Conception sites web</h3><p>Sites vitrines modernes, rapides et professionnels.</p></article>
+        <article><div class="icon">📅</div><h3>Réservation en ligne</h3><p>Idéal pour taxi, services, restaurants et rendez-vous.</p></article>
+        <article><div class="icon">📝</div><h3>Soumissions en ligne</h3><p>Recevez les demandes de clients directement par email.</p></article>
+        <article><div class="icon">☁️</div><h3>Hébergement web</h3><p>Mise en ligne, configuration de domaine et maintenance.</p></article>
+        <article><div class="icon">🛠️</div><h3>Maintenance & support</h3><p>Corrections, amélioration continue et accompagnement.</p></article>
+        <article><div class="icon">🖨️</div><h3>Impression</h3><p>Cartes d'affaires, flyers et affiches professionnelles.</p></article>
+      </div>
+    </section>
+
+    <section id="realisations" class="section dark">
+      <p class="small-title center">Nos réalisations</p>
+      <h2 class="center">Un portfolio pensé pour inspirer confiance.</h2>
+      <div class="portfolio-grid">
+        <article><div class="project visual-taxi">🚖</div><h3>Taxi Étoile</h3><p>Site de réservation taxi avec QR code.</p></article>
+        <article><div class="project visual-clean">🧹</div><h3>Entreprise de ménage</h3><p>Soumissions en ligne et services détaillés.</p></article>
+        <article><div class="project visual-garage">🔧</div><h3>Garage Pro</h3><p>Gestion, rendez-vous et présentation de services.</p></article>
+        <article><div class="project visual-transport">🚚</div><h3>Transport & déménagement</h3><p>Site avec formulaire de demande de prix.</p></article>
+      </div>
+    </section>
+
+    <section class="section process">
+      <p class="small-title center">Notre processus</p>
+      <h2 class="center">Simple, clair et efficace.</h2>
+      <div class="process-grid">
+        <div><span>01</span><h3>Discussion</h3><p>On comprend votre projet, vos services et vos objectifs.</p></div>
+        <div><span>02</span><h3>Design</h3><p>On crée une interface moderne adaptée à votre entreprise.</p></div>
+        <div><span>03</span><h3>Développement</h3><p>On construit le site avec formulaire et sections importantes.</p></div>
+        <div><span>04</span><h3>Mise en ligne</h3><p>On publie le site et on vous accompagne après le lancement.</p></div>
+      </div>
+    </section>
+
+    <section id="tarifs" class="section dark">
+      <p class="small-title center">Tarifs de départ</p>
+      <h2 class="center">Des forfaits simples pour commencer.</h2>
+      <div class="pricing-grid">
+        <article><h3>Site vitrine</h3><p>À partir de</p><strong>399$</strong><ul><li>Pages essentielles</li><li>Design responsive</li><li>Formulaire de contact</li></ul></article>
+        <article class="featured"><h3>Site avec soumission</h3><p>À partir de</p><strong>599$</strong><ul><li>Formulaire EmailJS</li><li>Services détaillés</li><li>Optimisé mobile</li></ul></article>
+        <article><h3>Site avec réservation</h3><p>À partir de</p><strong>699$</strong><ul><li>Réservation en ligne</li><li>QR code possible</li><li>Configuration complète</li></ul></article>
+      </div>
+    </section>
+
+    <section id="avis" class="section testimonials">
+      <p class="small-title center">Avis clients</p>
+      <h2 class="center">La satisfaction au centre de chaque projet.</h2>
+      <div class="testimonial-grid">
+        <article><div>★★★★★</div><p>“Design professionnel, rapide et très clair sur téléphone.”</p><strong>Client PME</strong></article>
+        <article><div>★★★★★</div><p>“Le formulaire de soumission fonctionne parfaitement.”</p><strong>Entreprise locale</strong></article>
+        <article><div>★★★★★</div><p>“Très bon service et accompagnement après la mise en ligne.”</p><strong>Client service</strong></article>
+      </div>
+    </section>
+
+    <section id="soumission" class="section quote-section">
+      <div class="quote-card">
+        <div>
+          <p class="small-title">Passez à l'action</p>
+          <h2>Demandez une soumission gratuite.</h2>
+          <p>Expliquez votre projet et recevez une réponse par email.</p>
+          <a href="mailto:aferdis.tech@gmail.com?subject=Demande%20de%20renseignements%20AFERDIS%20TECH" class="email-link">📧 Nous contacter directement</a>
+        </div>
+        <form id="quoteForm">
+          <input name="name" placeholder="Nom complet" required>
+          <input name="phone" placeholder="Téléphone (facultatif)">
+          <input name="email" type="email" placeholder="Adresse courriel" required>
+          <select name="service" required>
+            <option value="">Service demandé</option>
+            <option>Site Web</option>
+            <option>Réservation en Ligne</option>
+            <option>Soumission en Ligne</option>
+            <option>Hébergement Web</option>
+            <option>Maintenance & Support</option>
+            <option>Cartes d'Affaires</option>
+            <option>Flyers</option>
+            <option>Affiches</option>
+          </select>
+          <textarea name="message" placeholder="Décrivez votre projet..." required></textarea>
+          <button type="submit">Envoyer ma demande</button>
+          <p id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <img src="images/logo-aferdis.jpg" alt="AFERDIS TECH">
+      <p>Créons votre avenir numérique.</p>
     </div>
-  </div>
-  <div class="hero-card logo-showcase">
-    <img src="images/logo-aferdis.jpg" alt="Logo AFERDIS TECH">
-    <h3>Vos idées.<br><span>Notre expertise.</span><br>Votre succès.</h3>
-  </div>
-</section>
+    <div>
+      <h3>Menu</h3>
+      <a href="#agence">L'agence</a>
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#soumission">Devis</a>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <p>Sites Web</p>
+      <p>Réservation en Ligne</p>
+      <p>Soumissions en Ligne</p>
+      <p>Impression</p>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:aferdis.tech@gmail.com">aferdis.tech@gmail.com</a>
+      <a href="https://aferdis.com">aferdis.com</a>
+      <p>@aferdis.tech</p>
+    </div>
+  </footer>
 
-<section id="services" class="section">
-  <h2>NOS SERVICES</h2>
-  <div class="grid">
-    <div class="card"><div>🌐</div><h3>Sites Web</h3><p>Sites modernes, rapides et professionnels.</p></div>
-    <div class="card"><div>📅</div><h3>Réservation en Ligne</h3><p>Idéal pour taxi, restaurant et services.</p></div>
-    <div class="card"><div>📝</div><h3>Soumissions en Ligne</h3><p>Recevez les demandes directement par email.</p></div>
-    <div class="card"><div>☁️</div><h3>Hébergement Web</h3><p>Mise en ligne sur GitHub Pages ou Netlify.</p></div>
-    <div class="card"><div>🛠️</div><h3>Maintenance & Support</h3><p>Corrections, mises à jour et accompagnement.</p></div>
-  </div>
-</section>
-
-<section id="impression" class="section dark">
-  <h2>IMPRESSION</h2>
-  <div class="print-grid">
-    <div>💳 <strong>Cartes d'Affaires</strong></div>
-    <div>📄 <strong>Flyers</strong></div>
-    <div>📢 <strong>Affiches</strong></div>
-  </div>
-</section>
-
-<section id="soumission" class="section">
-  <div class="quote-box">
-    <h2>Demande de soumission</h2>
-    <p>Remplissez le formulaire et nous vous répondrons rapidement.</p>
-    <form id="quoteForm">
-      <div class="row">
-        <input name="name" placeholder="Nom complet" required>
-        <input name="phone" placeholder="Téléphone" required>
-      </div>
-      <div class="row">
-        <input name="email" type="email" placeholder="Email">
-        <select name="service" required>
-          <option value="">Choisir un service</option>
-          <option>Site Web</option>
-          <option>Réservation en Ligne</option>
-          <option>Soumission en Ligne</option>
-          <option>Hébergement Web</option>
-          <option>Maintenance & Support</option>
-          <option>Cartes d'Affaires</option>
-          <option>Flyers</option>
-          <option>Affiches</option>
-        </select>
-      </div>
-      <textarea name="message" placeholder="Expliquez votre projet..." required></textarea>
-      <button type="submit">Envoyer la demande</button>
-      <p id="formStatus"></p>
-    </form>
-  </div>
-</section>
-
-<section id="contact" class="section contact">
-  <h2>Contact</h2>
-  <div class="contact-grid">
-    
-    <a href="mailto:aferdis.tech@gmail.com">📧 aferdis.tech@gmail.com</a>
-    <a href="https://aferdis.com">🌐 aferdis.com</a>
-    <span>📍 Montréal, Québec</span>
-  </div>
-  <div class="socials">
-    <span>Facebook: @aferdis.tech</span>
-    <span>Instagram: @aferdis.tech</span>
-    <span>TikTok: @aferdis.tech</span>
-    <span>LinkedIn: Aferdis Tech</span>
-  </div>
-</section>
-
-<footer><img src="images/logo-aferdis.jpg" alt="AFERDIS TECH" class="footer-logo"><p>© 2026 AFERDIS TECH — Tous droits réservés.</p></footer>
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function(){
-  const btn = document.getElementById("menuToggle");
-  const nav = document.getElementById("mainNav");
-  if(btn && nav){
-    btn.addEventListener("click", () => nav.classList.toggle("open"));
-    nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
-  }
-});
-</script>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
